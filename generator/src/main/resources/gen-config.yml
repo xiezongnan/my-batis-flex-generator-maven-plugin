@@ -18,7 +18,7 @@ globalEntityClassSuffix: "Entity"
 #globalMapperPackage:
 #globalMapperClassPrefix:
 #globalMapperClassSuffix:
-#globalXmlPath:
+globalXmlPath: "mapper.gen"
 #globalXmlFilePrefix:
 #globalXmlFileSuffix:
 #globalControllerPackage:

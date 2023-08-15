@@ -351,7 +351,15 @@ public class PackageConfig {
         if (StringUtil.isBlank(sourceXmlModuleDir)) {
             sourceXmlModuleDir = "auto-generate-directory";
         }
-        return System.getProperty("parent.project.path") + "/" + sourceXmlModuleDir + "/src/main/resources";
+        String dir = System.getProperty("parent.project.path") + "/" + sourceXmlModuleDir + "/src/main/resources";
+        if (StringUtil.isNotBlank(mapperXmlPath)) {
+            String xmlPath = mapperXmlPath.replace(".", "/");
+            if (!mapperXmlPath.startsWith("/")) {
+                dir = dir + "/";
+            }
+            dir = dir + xmlPath;
+        }
+        return dir;
     }
 
     public String getSourceServiceModuleDir() {
