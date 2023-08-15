@@ -1,0 +1,75 @@
+jdbcUrl: "jdbc:mysql://127.0.0.1:3306/petrus_study_plus?characterEncoding=utf-8"
+jdbcUsername: "root"
+jdbcPwd: "password"
+author: "xiezongnan"
+
+withLombok: true
+globalSchema: "petrus_study_plus"
+globalBasePackage: "com.xiezongnan.api"
+#globalEntityPackage:
+#globalEntityClassPrefix:
+globalEntityClassSuffix: "Entity"
+#globalServicePackage:
+#globalServiceClassPrefix:
+#globalServiceClassSuffix:
+#globalServiceImplPackage:
+#globalServiceImplClassPrefix:
+#globalServiceImplClassSuffix:
+#globalMapperPackage:
+#globalMapperClassPrefix:
+#globalMapperClassSuffix:
+#globalXmlPath:
+#globalXmlFilePrefix:
+#globalXmlFileSuffix:
+#globalControllerPackage:
+#globalControllerClassPrefix:
+#globalControllerClassSuffix:
+#globalDtoPackage:
+#globalDtoClassPrefix:
+globalDtoClassSuffix: "Dto"
+#globalMapstructPackage:
+#globalMapstructClassPrefix:
+globalMapstructClassSuffix: "Converter"
+#globalTableDefPackage:
+#globalTableDefClassPrefix:
+#globalTableDefClassSuffix:
+#globalVoPackage:
+#globalVoClassPrefix:
+globalVoClassSuffix: "Vo"
+globalSourceModuleName: "manual"
+#sourceEntityModuleName:
+#sourceDtoModuleName:
+#sourceVoModuleName:
+#sourceMapstructModuleName:
+#sourceMapperModuleName:
+#sourceTableDefModuleName:
+#sourceXmlModuleName:
+#sourceServiceModuleName:
+#sourceServiceImplModuleName:
+#sourceControllerModuleName:
+
+### Tables Config Example
+tables:
+  - tableName: "tb_account"
+#    schema:
+    needGenerateEntity: true
+    needGenerateDto: true
+    needGenerateVo: true
+    needGenerateMapper: true
+    needGenerateXml: true
+    needGenerateService: true
+    needGenerateMapstruct: true
+    needGenerateController: true
+    needGenerateTableDef: true
+#    author:
+#    basePackage:
+#    entityPackage:
+#    dtoPackage:
+#    voPackage:
+#    servicePackage:
+#    serviceImplPackage:
+#    mapperPackage:
+#    xmlPath:
+#    controllerPackage:
+#    mapstructPackage:
+#    tableDefPackage:
