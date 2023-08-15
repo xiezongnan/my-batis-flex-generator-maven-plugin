@@ -3,8 +3,11 @@ jdbcUsername: "root"
 jdbcPwd: "password"
 author: "xiezongnan"
 
+# 是否启用lombok 影响entity;dto;vo
 withLombok: true
+# 默认使用的数据库
 globalSchema: "petrus_study_plus"
+# 默认的包路径
 globalBasePackage: "com.xiezongnan.api"
 #globalEntityPackage:
 #globalEntityClassPrefix:
@@ -18,6 +21,7 @@ globalEntityClassSuffix: "Entity"
 #globalMapperPackage:
 #globalMapperClassPrefix:
 #globalMapperClassSuffix:
+# Xml文件的相对路径 project/module/src/main/resources/{globalXmlPath} 可以使用 /xxx/xxx 或者 xxx/xxx 或者 xxx.xxx 风格
 globalXmlPath: "mapper.gen"
 #globalXmlFilePrefix:
 #globalXmlFileSuffix:
@@ -36,6 +40,7 @@ globalMapstructClassSuffix: "Converter"
 #globalVoPackage:
 #globalVoClassPrefix:
 globalVoClassSuffix: "Vo"
+# 默认生成至子项目的名称
 globalSourceModuleName: "manual"
 #sourceEntityModuleName:
 #sourceDtoModuleName:
